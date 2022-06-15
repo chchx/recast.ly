@@ -6,7 +6,7 @@ const VideoList = ( {videos, handleVideoListClick} ) => {
   return (
       <ul>
         {videos.map((video) => (
-        <VideoListEntry handleVideoListClick={handleVideoListClick} video={video}/>
+        <VideoListEntry key={video.id.videoId} handleVideoListClick={handleVideoListClick} video={video}/>
         ))}
 
       </ul>
